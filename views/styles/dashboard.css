@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --arc-io-purple: #7b4dff;
+    --button-green: #1eb154;
+    --button-grey: #12151b;
+
+    --fill-darkest: rgb(23, 24, 30);
+    --fill-dark: rgb(31, 33, 41);
+    --fill-light: rgb(39, 41, 52);
+
+    --text-light: rgb(242, 244, 251);
+    --text-dark: #63707f;
+    --text-high: #22c55e;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--fill-dark) !important;
+}
+
+/* Navbar Section */
+
+#active-tab{
+    color: var(--text-high) !important;
+}
+
+.navbar_section{
+    background: var(--fill-light);
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+}
+
+.navbar_section .navbar-brand{
+    font-size: 32px;
+    font-weight: 600;
+    padding: 0;
+}
+
+.navbar_section .navbar-brand span{
+    color: var(--text-high);
+}
+
+.navbar_section .navbar-brand img{
+    height: 43px;
+    width: 43px;
+    border-radius: 7px;
+}
+
+.navbar_section .navbar-toggler{
+    font-size: 25px;
+    box-shadow: none !important;
+    border: none;
+}
+.navbar_section .navbar-toggler .fa-times{
+    font-size: 29px;
+    display: none;
+}
+
+.navbar_section .navbar-nav li a{
+    color: white !important;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 2px 0px 0px 6px;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.navbar_section .navbar-nav li a:hover{
+    color: var(--text-high) !important;
+    background: none;
+}
+
+.navbar_section .navbar-nav li .dropdown-toggle:focus{
+    color: var(--text-high) !important;
+}
+
+.navbar_section .navbar-nav li .dropdown-menu{
+    background: unset;
+    border: none;
+    background: var(--fill-light);
+    text-align: center;
+}
+
+.navbar_section .navbar-nav li .dropdown-menu .dropdown-item{
+    /* background-color: wheat; */
+    margin: 0px 0px 8px 0px;
+}
+
+/* Hero Section */
+.hero_section{
+    margin-top: 64px;
+    min-height: calc(100vh - 64px);
+}
+
+
+
+/* ============ Media Queries Starts From This Part Now ============ */
+/* Mobile Devices */
+@media screen and (min-width: 0px) and (max-width: 425px) {
+    .navbar_section .navbar-nav{
+        margin-top: 10px;
+    }
+    .navbar_section .navbar-nav a{
+        text-align: center;
+    }
+    .navbar_section .navbar-nav li a::after{
+        height: unset;
+    }
+}
+
+/* Laptop Devices */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .navbar_section .navbar-nav{
+        margin-top: 10px;
+    }
+    .navbar_section .navbar-nav a{
+        text-align: center;
+    }
+    .navbar_section .navbar-nav li a::after{
+        height: unset;
+    }
+}

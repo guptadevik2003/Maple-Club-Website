@@ -10,5 +10,5 @@ userNameele.innerHTML = user.username
 const guildHolderele = document.getElementById('guildHolder')
 
 guilds.forEach(async g => {
-    guildHolderele.innerHTML += `<p>${g.id} ${g.name}</p>`
+    guildHolderele.innerHTML += `<div class="each_guild_holder"><img class="guild_icon" src="https://cdn.discordapp.com/icons/${g.id}/${g.icon}.png"><h5 class="guild_name">${g.name}</h5><button class="guild_inv_link"></button></div>`
 })

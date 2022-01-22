@@ -97,6 +97,34 @@ body{
     min-height: calc(100vh - 64px);
 }
 
+.guilds_holder{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.each_guild_holder{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.each_guild_holder .guild_icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.each_guild_holder .guild_name{
+
+}
+.each_guild_holder .guild_inv_link{
+
+}
+
 
 
 /* ============ Media Queries Starts From This Part Now ============ */

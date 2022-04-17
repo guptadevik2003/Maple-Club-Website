@@ -33,6 +33,7 @@
     "express-session": "^1.17.2",
     "fs": "^0.0.1-security",
     "mongoose": "^6.3.0",
+    "node": "^17.5.0",
     "node-fetch": "^2.6.6"
   }
 }
